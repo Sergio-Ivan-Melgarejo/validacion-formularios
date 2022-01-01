@@ -38,7 +38,7 @@ const considirAmbasPassword = () => {
 	const inputPassword1 = document.getElementById("password").value;
 	const inputPassword2 = document.getElementById("password2").value;
 
-	if(inputPassword1 === inputPassword2){
+	if(inputPassword1 === inputPassword2 && inputPassword2 !== ""){
 		document.getElementById(`grupo__password2`).classList.add(`correcto`);
 		document.getElementById(`grupo__password2`).classList.remove(`incorrecto`);
 		document.querySelector(`#grupo__password2 i`).classList.replace(`fa-times-circle`,`fa-check-circle`);
